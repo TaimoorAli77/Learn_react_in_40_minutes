@@ -1,0 +1,8 @@
+---React App---- instead of using npx create-react-app . use following cmd
+
+npm install vite@latest
+npm i
+npm run dev               to run the app
+Plus also install node
+.........................
+

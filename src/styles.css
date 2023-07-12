@@ -1,0 +1,73 @@
+body{
+    background-color: #343334;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.center{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 13em;
+    height: 5.1em;
+    font-size: 3em;
+}
+span{
+    color: red;
+}
+input[type="checkbox"].box-round:checked+span{
+    color: aqua;
+}
+.input  {
+    background-color: #036598;
+    width: 28rem;
+    height: 2.5em;
+    border: #036598;
+    border-radius: 1em;
+    color: springgreen;
+    font-size: 20px;
+    margin-top: 1.2em;
+    margin-bottom: 0.41em;
+    padding-left: 1.1em;
+
+}
+input:focus-visible{
+    outline: 0px;
+}
+.btn{
+    background-color: #2f3f48;
+    color: #10a1f0;
+    width: 29.1rem;
+    height: 2.5em;
+    border-radius: 1em;
+    border: 2px solid #036598;
+    cursor: pointer;
+    font-family: 'Gill Sans';
+    font-size: 20px;
+}
+li{
+display: block;
+}
+input[type="checkbox" ]{
+    background-color: #0acf5a;
+    cursor: pointer;
+    height: 1.7em;
+    width: 1.7em;
+    clip-path: circle(46% at 50% 50%);
+}
+li label{
+    font-size: 1.72em;
+    margin-right: 0.5em;
+}
+.btn-danger{
+    background-color: #343334;
+    color: rgb(180, 66, 66);
+    border: 1px solid rgb(180, 66, 66);
+    font-size: large;
+    font-weight: 600;
+}
+h1{
+    color: #bac6cb;
+}
