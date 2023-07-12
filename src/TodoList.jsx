@@ -7,8 +7,8 @@ const TodoList = ({ todos ,deleteTodo , toggleTodo }) => {
       {todos.length === 0 && "No Tasks"}
       {todos.map((todo) => {
         return (
-          <ul className="list">
-            <TodoItem  {...todo}  key={todo.id} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
+          <ul className="list"  key={todo.id}>
+            <TodoItem  {...todo}  toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
           </ul>
         );
       })}
