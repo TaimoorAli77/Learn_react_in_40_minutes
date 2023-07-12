@@ -1,30 +1,14 @@
 import React from "react";
+import TodoItem from "./TodoItem";
 
-const TodoList = ({todos}) => {
+const TodoList = ({ todos ,deleteTodo , toggleTodo }) => {
   return (
     <>
-      <h1 className="header">Todo List</h1>
       {todos.length === 0 && "No Tasks"}
       {todos.map((todo) => {
         return (
-          <ul className="list" key={todo.id}>
-            <li>
-              <label htmlFor="list">
-                <input
-                  type="checkbox"
-                  className="box-round"
-                  checked={todo.completed}
-                  //   onChange={e=>toggleTodo(todo.id, e.target.checked)}
-                />
-                <span>{todo.title}</span>
-              </label>
-              <button
-                className="btn-danger"
-                // onClick={() => deleteTodo(todo.id)}
-              >
-                Delete
-              </button>
-            </li>
+          <ul className="list">
+            <TodoItem  {...todo}  key={todo.id} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
           </ul>
         );
       })}
