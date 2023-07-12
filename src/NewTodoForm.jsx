@@ -1,13 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 
-const NewTodoForm = ({addTodo}) => {
+const NewTodoForm = ({onSubmit}) => {
   const [newItem, setNewItem] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        if(newItem === "" )
-        return addTodo(newItem)  
+        if(newItem === "" ) return 
+         
+        onSubmit(newItem)  
         
     
         setNewItem("");
